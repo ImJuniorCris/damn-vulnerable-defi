@@ -1,20 +1,64 @@
-![](cover.png)
+# DamnVulnerableDeFi
 
-**A set of challenges to hack implementations of DeFi in Ethereum.** Featuring flash loans, oracles, governance, NFTs, lending pools, and more!
+A set of smart contracts and challenges to learn and practice DeFi security vulnerabilities and exploit techniques.
 
-Created by [@tinchoabbate](https://twitter.com/tinchoabbate) at OpenZeppelin
+## About
 
-## Play
+DamnVulnerableDeFi is an educational repository containing intentionally insecure DeFi smart contracts and CTF-style exercises for learning about common vulnerabilities in decentralized finance.
 
-Visit [damnvulnerabledefi.xyz](https://damnvulnerabledefi.xyz)!
+## Features
 
-## Troubleshooting
+- Multiple DeFi challenges with increasing complexity
+- Realistic smart contract vulnerabilities for hands-on learning
+- Ready-to-use testing framework for local development
+- Detailed solutions and explanations for each challenge
 
-- Some users have reported [issues](https://github.com/OpenZeppelin/damn-vulnerable-defi/issues/1) with specific versions of node. I have succesfully installed all dependencies, and executed all challenges, with version `v12.20.0`. If you're using a different version of node and are having problems during the setup, try switching to version `v12.20.0`.
-- Some users have reported [issues](https://github.com/OpenZeppelin/damn-vulnerable-defi/pull/4) with the timeout set in the `package.json` file for "The Rewarder" challenge. If you're having trouble executing your exploit for this challenge, try increasing the timeout.
+## Getting Started
+
+### Prerequisites
+
+- [Node.js](https://nodejs.org/)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [Hardhat](https://hardhat.org/)
+
+### Installation
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/TartarusDevtech/DamnVulnerableDeFi.git
+   cd DamnVulnerableDeFi
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Compile contracts:
+   ```bash
+   npx hardhat compile
+   ```
+
+### Running the Challenges
+
+Each challenge is located in the `contracts/` and `test/` directories. To run the tests:
+
+```bash
+npx hardhat test
+```
+
+Follow instructions in each challenge folder and the test files to attempt exploits.
+
+## Contributing
+
+Contributions, new challenges, and improvements are welcome! Please open an issue or pull request.
+
+## License
+
+This project is licensed under the MIT License.
 
 ## Disclaimer
 
-All Solidity code, practices and patterns in this repository are DAMN VULNERABLE and for educational purposes only.
-
-DO NOT USE IN PRODUCTION.
+This repository is for educational purposes only. Do not use these vulnerabilities in production or for malicious purposes.
